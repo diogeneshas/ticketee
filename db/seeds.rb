@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+unless User.exists?(email: 'diogenes@maino.com.br')
+  User.create!(email: 'diogenes@maino.com.br', password: "210105", admin: true)
+end
+
+["Visual Studio Code", "Internet Explorer"].each do |name|
+  unless Project.exists?(name: name)
+    Project.create!(name: name, description: "A sample project about #{name}")
+  end
+end
