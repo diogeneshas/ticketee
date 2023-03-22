@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application that does the following:
 
-Things you may want to cover:
+* Tracks tickets (of course) and groups them into projects
 
-* Ruby version
+* Provides a way to restrict users to certain projects
 
-* System dependencies
+* Allows users to upload files to tickets
 
-* Configuration
+* Lets users tag tickets so they’re easy to find
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Provides an API on which users can base development of their own applications
