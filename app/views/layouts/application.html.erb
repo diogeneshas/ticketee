@@ -17,9 +17,17 @@
   </head>
 
   <body>
-    <% flash.each do |key, message| %>
-      <div><%= message %></div>
-    <% end %>
-    <%= yield %>
+    <div class="container-fluid">
+      <% flash.each do |key, message| %>
+        <div><%= message %></div>
+      <% end %>
+
+      <div class="text-center">
+        <%= link_to "Sign up", new_user_registration_path %>
+
+      </div>
+
+      <%= yield %>
+    </div>
   </body>
 </html>
